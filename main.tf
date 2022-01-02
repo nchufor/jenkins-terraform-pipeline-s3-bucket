@@ -2,11 +2,6 @@ provider "aws" {
   region = var.aws_region
 }
 
-#Create security group with firewall rules
-resource "aws_security_group" "my_security_group" {
-  name        = var.security_group
-  description = "aws_vpc"
-
   ingress {
     from_port   = 8080
     to_port     = 8080
