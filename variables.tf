@@ -3,11 +3,6 @@ variable "aws_region" {
        default     = "us-east-2" 
 }
 
-variable "security_group" { 
-    description = "Name of security group" 
-    default     = "jenkins-sgroup-dec-2021" 
-}
-
 variable "versioning" {
     type        = bool
     description = "(Optional) A state of versioning."
