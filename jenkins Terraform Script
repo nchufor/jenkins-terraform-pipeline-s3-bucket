@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ("Git Checkout") {
             steps {
-                git credentialsId: 'put your git url inside the single quotation marks'
+                git 'https://github.com/joshking1/jenkins-terraform-pipeline-s3-bucket.git'
             }
         }
         stage ("Terraform Init") {
